@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    h1{
+        background-color: rgb(7, 178, 190);
+        color:cornsilk;
+        padding: 25px 50px;
+        padding-left: 300px;
+
+    }
+    input{
+        margin: 10px 10px;
+        padding-right: 100px;
+        
+    }
+    button{
+        margin: 10px 190px;
+        color: rgb(226, 226, 231);
+        background-color: darkcyan;
+        padding: 10px 50px;
+        
+
+    }
+    table{
+        font-size: 20px;
+       
+    }
+    .main{
+        margin-top: 50px;
+        margin-left: 550px;
+       
+    }
+
+    table{
+        background-color:rgb(203, 230, 255);
+        padding: 60px 60px;
+    }
+
+        
+    </style>
+    
+</head>
+<body>
+    <div id="heading">
+    <h1>DIABETES PREDICTION  BASED ON LIFESTYLE</h1></div>
+    <div class="main">
+        <form action="/results" method="POST"><table>
+            <tr><th><label for="Pregnancy">Pregnancy</th><th> <input type="number" name="pregnancy"></th></tr>
+        <tr><th><label for="Glucose"> Glucose </th><th><input type="'number" name="glucose"></th></tr>
+        <tr><th><label for="Blood_pressure">Blood Pressure </th><th><input type="number" name="Blood_pressure"></th></tr>
+        <tr><th><label for="skin thickness">Skin thickness</th><th> <input type="number" name="skin thickness"></th></tr>
+        <tr><th><label for="Insulin">Insulin </th><th><input type="number" name="Insulin"></th></tr>
+        <tr><th><label for="BMI">BMI </th><th><input type="number" name="BMI"></th></tr>
+         <tr><th><label for="DPF">   DPF </th><th> <input type="number" name="DPF"></th></tr>
+           <tr><th><label for="age"> Age </th><th> <input type="number" name="age"></th></tr>
+           </table>
+            {{prediction}}<br>
+        <button type="submit">SUBMIT</button>
+        
+        </form>
+    </div>
+</body>
+</html>
